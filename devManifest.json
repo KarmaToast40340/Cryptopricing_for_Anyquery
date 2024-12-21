@@ -1,0 +1,10 @@
+{
+  "executable": "cryptopricingplugin",
+  "build_command": "make",
+  "user_config": {
+    "default": {}
+  },
+  "tables": ["cryptoValueTable"],
+  "log-file": "/home/karma/Documents/Pers/Notion/logs/plugin.log",
+  "log-level": "debug"
+}

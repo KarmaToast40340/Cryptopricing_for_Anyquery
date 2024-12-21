@@ -1,0 +1,20 @@
+
+# Go template downloaded with gut
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.csv
+*go.work
+*.gut
+*.csv
+
+# Dev files
+*.log
+*.init
+*.env
+*dist/
+*debug_log.txt
