@@ -2,6 +2,9 @@ import subprocess
 import os
 import requests
 import csv
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def delete_wallet_csv():
@@ -46,8 +49,8 @@ if __name__ == "__main__":
     execute_bash_commands()
 
 # Définir votre token Notion et l'ID de la base de données
-NOTION_TOKEN = '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'  # Remplacez par votre token
-DATABASE_ID = '14486a6b24b6802698c9c019a1af6b69'  # Remplacez par l'ID de votre base de données Notion
+NOTION_TOKEN = os.getenv("NOTION_TOKEN") # Remplacez par votre token
+DATABASE_ID = os.getenv("DATABASE_ID")  # Remplacez par l'ID de votre base de données Notion
 NOTION_API_URL = "https://api.notion.com/v1/pages"
 DATABASE_URL = f"https://api.notion.com/v1/databases/{DATABASE_ID}/query"  # URL pour récupérer les données
 
