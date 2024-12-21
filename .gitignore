@@ -18,3 +18,5 @@
 *.env
 *dist/
 *debug_log.txt
+Wallet.py
+requests.sql
